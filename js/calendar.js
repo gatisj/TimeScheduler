@@ -5,15 +5,15 @@
 /// <reference path="moment.min.js" />
 /// <reference path="timelineScheduler.js" />
 
-var today = moment().startOf('day');
+var today = moment("20140101", "YYYYMMDD").startOf('day');
 
 var Calendar = {
     Periods: [
         {
-            Name: '3 days',
-            Label: '3 days',
-            TimeframePeriod: (60 * 3),
-            TimeframeOverall: (60 * 24 * 3),
+            Name: '1 days',
+            Label: '1 days',
+            TimeframePeriod: (60),
+            TimeframeOverall: (60 * 24),
             TimeframeHeaders: [
                 'Do MMM',
                 'HH'
